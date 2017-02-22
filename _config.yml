@@ -1,3 +1,5 @@
 name: Ngan Hoang, Portfolio Site
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+baseurl: /blog/
+url: http://ngansense.github.io
