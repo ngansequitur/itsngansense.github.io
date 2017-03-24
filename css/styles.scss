@@ -51,7 +51,7 @@ nav, footer {
   		}
 
   		@media screen and (max-width:700px) {
-	    	margin-right: 1em;
+	    	margin-right: .5em;
 	    }
 		}
 	}
@@ -59,6 +59,7 @@ nav, footer {
 	a {
 		font-family: $font-secondary;
 		font-size: 2em;
+		text-shadow: none;
 	}
 }
 
