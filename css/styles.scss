@@ -1,0 +1,165 @@
+---
+---
+
+// imports
+@import 'vars';
+
+// scss styles
+
+body {
+  margin: 7em auto 0;
+  width: 100%;
+  background-color: $color-mm-creamy-beige;
+  color: $color-grey-dark;
+  font-family: $font-primary;
+}
+
+nav {
+	position: fixed;
+	padding: 0 10%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+
+	ul {
+		display: flex;
+		justify-content: flex-end;
+
+	  a {
+	  	&.it-me {
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+}
+
+nav, footer {
+	ul {
+		padding: 0;
+		list-style: none;
+		font-weight: 400;
+		position: relative;
+
+		li {
+			display: inline;
+  		margin-right: 2em;
+
+  		&:last-child {
+  			margin-right: 0;
+  		}
+		}
+	}
+
+	a {
+		font-family: $font-secondary;
+		font-size: 2em;
+	}
+}
+
+a {
+	font-family: $font-primary;
+  text-decoration: none;
+  color: $color-purple;
+  text-decoration: none;
+	font-weight: bold;
+	background: linear-gradient($color-purple-light, $color-purple-light);
+	background-size: 2px 2px;
+	background-repeat: repeat-x;
+	background-position: 0 95%;
+	transition: all .1s;
+
+  &:hover {
+  	color: $color-purple-light;
+		background-size: 1px 5px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  font-family: $font-secondary;
+}
+
+p {
+  font-size: 1.75em;
+  line-height: 1.8em;
+  color: $color-grey-dark;
+  font-family: $font-primary;
+}
+
+footer {
+	border-top: 2px solid $color-purple-light;
+	text-align: center;
+  font-size: .8em;
+  padding: 3em 0;
+  margin-top: 10em;
+
+  a {
+  	background-size: 0;
+
+  	&:hover {
+  		background-size: 0;
+  	}
+  }
+
+  .copyright {
+  	font-family: $font-secondary;
+  	font-size: 1.5em;
+  }
+}
+
+ul {
+	&.posts { 
+  	margin: 2em auto 4em; 
+  	font-size: 1.5em;
+
+  	li {
+  		list-style: none;
+  	}
+	}
+}
+
+.container {
+	margin: 2em auto;
+	width: 80%;
+}
+
+.blurb {
+	span {
+		&.read-more {
+			font-size: .8em;
+			display: block;
+		}
+	}
+}
+
+.about {
+	.bio-photo {
+		width: 300px;
+		height: 300px;
+		margin-right: 2em;
+		margin-bottom: 1em;
+		float: left;
+		border-radius: 10%;
+
+		@media (max-width: 700px) {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto 2em;
+		}
+	}
+
+	.resume-section {
+		margin-top: 1em;
+	}
+
+	p {
+		font-size: 1.2em;
+
+		span {
+			display: block;
+			font-size: .8em;
+		}
+	}
+}

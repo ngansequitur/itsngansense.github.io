@@ -1,5 +1,5 @@
 name: Ngan Hoang
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-baseurl: /blog/
+baseurl: 
 url: http://ngansense.github.io
