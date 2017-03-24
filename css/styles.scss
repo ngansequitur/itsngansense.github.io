@@ -155,7 +155,7 @@ ul {
 		float: left;
 		border-radius: 10%;
 
-		@media (max-width: 700px) {
+		@media screen and (max-width: 700px) {
 			width: 100%;
 			height: 100%;
 			margin: 0 auto 2em;
@@ -187,11 +187,11 @@ ul {
 	    -webkit-transition: 0.2s ease-in-out;
 	    transition: 0.2s ease-in-out;
 
-	    @media (max-width:1000px) {
+	    @media screen and (max-width:1000px) {
 	    	flex-basis: 47%;
 	    }
 
-	    @media (max-width:700px) {
+	    @media screen and (max-width:700px) {
 	    	flex-basis: 100%;
 	    }
 
