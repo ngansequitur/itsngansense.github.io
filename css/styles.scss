@@ -69,10 +69,15 @@ a {
 	background-repeat: repeat-x;
 	background-position: 0 95%;
 	transition: all .1s;
+	text-shadow: 	0.12em 0 $color-mm-creamy-beige, 
+								-0.12em 0 $color-mm-creamy-beige, 
+								0.15em 0 $color-mm-creamy-beige, 
+								-0.15em 0 $color-mm-creamy-beige;
 
   &:hover {
   	color: $color-purple-light;
 		background-size: 1px 5px;
+		text-shadow: none;
   }
 }
 
