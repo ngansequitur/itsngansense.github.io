@@ -87,8 +87,8 @@ h1 {
 }
 
 p {
-  font-size: 1.75em;
-  line-height: 1.8em;
+  font-size: 1.2em;
+  line-height: 1.4em;
   color: $color-grey-dark;
   font-family: $font-primary;
 }
@@ -131,6 +131,12 @@ ul {
 }
 
 .blurb {
+
+	p {
+		font-size: 1.5em;
+		line-height: 1.8em;
+	}
+
 	span {
 		&.read-more {
 			font-size: .8em;
@@ -160,11 +166,40 @@ ul {
 	}
 
 	p {
-		font-size: 1.2em;
-
 		span {
 			display: block;
 			font-size: .8em;
+		}
+	}
+}
+
+.work {
+
+	p {
+		margin-bottom: 2em;
+	}
+	
+	.projects {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.design {
+			flex-basis: 32%;
+	    margin-bottom: 3.5rem;
+	    -webkit-transition: 0.2s ease-in-out;
+	    transition: 0.2s ease-in-out;
+
+	    /*
+	    &:hover {
+	    	-webkit-transform: translateY(-5px);
+	    	transform: translateY(-5px);
+	    }
+	    */
+
+	    img {
+	    	max-width: 100%;
+	    }
 		}
 	}
 }
