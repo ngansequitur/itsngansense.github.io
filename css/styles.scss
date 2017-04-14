@@ -87,9 +87,17 @@ a {
   }
 }
 
-h1 {
-  font-size: 3em;
+h1, h2, h3, h4, h5, h6 {
   font-family: $font-secondary;
+  color: $color-purple;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
 }
 
 p {
@@ -179,10 +187,6 @@ ul {
 		}
 	}
 
-	.resume-section {
-		margin-top: 1em;
-	}
-
 	p {
 		span {
 			display: block;
@@ -223,6 +227,69 @@ ul {
 	    img {
 	    	max-width: 100%;
 	    }
+		}
+	}
+}
+
+.resume {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	h2 {
+		font-size: 2em;
+		color: $color-purple-light;
+
+		&:before {
+			content: '';
+			background-color: $color-purple-light;
+			width: 10px;
+			height: 10px;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	&-experience, &-extras {
+		width: 45%;
+		display: inline;
+
+		@media screen and (max-width: 1000px) {
+			width: 100%;
+			display: block;
+		}
+
+		.details {
+			font-size: 1em;
+				@media screen and (max-width: 1000px) {
+					font-size: 1.1em;
+			}
+		}
+
+		.title {
+			margin-top: 1em;
+			color: $color-purple;
+
+			@media screen and (max-width: 1000px) {
+				font-size: 1.1em;
+			}
+		}
+
+		li {
+			strong {
+				color: $color-purple;
+			}
+		}
+	}
+
+	&-extras {
+		margin-left: 2em;
+
+		@media screen and (max-width: 1000px) {
+			margin-left: 0;
 		}
 	}
 }
