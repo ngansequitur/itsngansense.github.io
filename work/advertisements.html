@@ -1,0 +1,124 @@
+---
+layout: default
+title: Ngan Hoang | Display Ads
+---
+
+<div class="display-ads">
+  <h1>Display Ads</h1>
+  <p>Selected works from various advertising campaigns during my time on the Revenue Executions and Branded Content Team at Vox Media.</p>
+
+  <div class="lightbox-gallery">
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/virginamerica-sfo-hammock.jpg" alt="Virgin America SFO Deals | Design & Development">
+    </div>  
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/buick-24hr-happiness.gif" alt="Buick 24 Hour Happiness Test Drive | Consultation, Design & Development">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/huawei-mate-s-dark.jpg" alt="Huawei Mate S | Design">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/bestbuy-moodlights.gif" alt="Best Buy / Phillips Hue Starter Kit | Design & Development">
+    </div>    
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/bww-fantasyleague-prelude.jpg" alt="Buffalo Wild Wings Fantasy League | Design">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/att-business-circle.gif" alt="AT&T Business Circle | Design & Development">
+    </div>
+
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/collectively-fashion.jpg" alt="Unilever Collectively Fashion | Design & Development">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/jf-yht-sheerblonde-wla-640x640.jpg" alt="John Frieda: Your Hair Talks, Make A Statement | Design">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/collectively-tech.jpg" alt="Unilever Collectively Tech | Design & Development">
+    </div>
+
+
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/goose-island-block-party-athena.jpg" alt="Goose Island Block Party | Design">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/huawei-mate-s.jpg" alt="Huawei Mate S | Design">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/landrover-vanishing-game-athena.gif" alt="Land Rover The Vanishing Game | Design & Development">
+    </div> 
+
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/kingsford-flavored-briquettes-hickory.jpg" alt="Kingsford Flavored Briquettes: Hickory | Design">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/virginamerica-sfo-volcano.jpg" alt="Virgin America SFO Deals | Design & Development">
+    </div>  
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/jf-asc-videoimmersion.jpg" alt="John Frieda: Your Hair Talks, Make A Statement | Design">
+    </div>    
+
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/landrover-vanishing-game-prelude.gif" alt="Land Rover The Vanishing Game | Design & Development">
+    </div>
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/nars-dualintensityblush.gif" alt="Nars Dual Intensity Blush | Design & Development">
+    </div>  
+
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/kingsford-flavored-briquettes-applewood-desktop.jpg" alt="Kingsford Flavored Briquettes: Applewood | Design">
+    </div> 
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/jf-cl-videoimmersion.jpg" alt="John Frieda: Your Hair Talks, Make A Statement | Design">
+    </div>      
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/virginamerica-sfo-surfers.jpg" alt="Virgin America SFO Deals | Design & Development">
+    </div> 
+    <div class="lightbox-gallery-box">
+      <img src="/img/ads/bww-fantasy-fb-athena.jpg" alt="Buffalo Wild Wings Fantasy League | Design">
+    </div>
+                                                         
+  </div>
+
+</div>
+
+<script>
+// Create a lightbox
+(function() {
+  var $lightbox = $("<div class='lightbox'></div>");
+  var $img = $("<img>");
+  var $caption = $("<p class='caption'></p>");
+
+  // Add image and caption to lightbox
+
+  $lightbox
+    .append($img)
+    .append($caption);
+
+  // Add lighbox to document
+
+  $('body').append($lightbox);
+
+  $('.lightbox-gallery-box img').click(function(e) {
+    e.preventDefault();
+
+    // Get image link and description
+    var src = $(this).attr("src");
+    var cap = $(this).attr("alt");
+
+    // Add data to lighbox
+
+    $img.attr('src', src);
+    $caption.text(cap);
+
+    // Show lightbox
+
+    $lightbox.fadeIn('fast');
+
+    $lightbox.click(function() {
+      $lightbox.fadeOut('fast');
+    });
+  });
+
+}());  
+</script>
