@@ -1,5 +1,15 @@
+---
+title: Ngansense.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 name: Ngan Hoang
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: "/blog/:year/:month/:day/:title"
 baseurl: 
 url: http://ngansense.github.io
