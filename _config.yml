@@ -1,5 +1,5 @@
 ---
-title: Ngansense.Github.Io
+title: itsngansense.github.io
 timezone: UTC
 collections:
   posts:
@@ -11,5 +11,5 @@ collections:
 name: Ngan Hoang
 markdown: kramdown
 permalink: "/blog/:year/:month/:day/:title"
-baseurl: 
-url: http://ngansense.github.io
+baseurl:
+url: http://itsngansense.github.io
