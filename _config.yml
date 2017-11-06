@@ -13,3 +13,4 @@ markdown: kramdown
 permalink: "/blog/:year/:month/:day/:title"
 baseurl:
 url: http://itsngansense.github.io
+livereload: true 
